@@ -1,0 +1,25 @@
+{
+    "name": "vova07/yii2-select2-widget",
+    "description": "The select2 widget for Yii framework.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "select2", "select 2", "select", "widget"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Crudu Vasile",
+            "email": "bazillio07@yandex.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/vova07/yii2-select2-widget/issues?state=open",
+        "source": "https://github.com/vova07/yii2-select2-widget"
+    },
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "vova07\\select2\\": ""
+        }
+    }
+}
