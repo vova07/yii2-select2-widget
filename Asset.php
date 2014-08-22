@@ -22,13 +22,6 @@ class Asset extends AssetBundle
     /**
      * @inheritdoc
      */
-	public $css = [
-		'select2-3.5.0/select2.css'
-	];
-
-    /**
-     * @inheritdoc
-     */
 	public $js = [
 		'select2-3.5.0/select2.min.js'
 	];

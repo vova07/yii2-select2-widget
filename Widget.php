@@ -5,8 +5,6 @@ use Yii;
 use yii\widgets\InputWidget;
 use yii\helpers\Json;
 use yii\helpers\Html;
-use vova07\select2\Select2Asset;
-use vova07\select2\Select2BootstrapAsset;
 
 /**
  * Select2 widget
@@ -48,6 +46,11 @@ class Widget extends InputWidget
 	 */
 	public $language;
 
+    /**
+     * @var boolean Whatever to use bootstrap CSS or not.
+     */
+    public $bootstrap = false;
+
 	/**
 	 * @inheritdoc
 	 */
@@ -88,6 +91,12 @@ class Widget extends InputWidget
 
         if ($this->language !== null) {
             $asset->language = $this->language;
+        }
+
+        if ($this->bootstrap === true) {
+            BootstrapAsset::register($view);
+        } else {
+            Select2Asset::register($view);
         }
 
 		// Init widget
