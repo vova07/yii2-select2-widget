@@ -27,7 +27,9 @@ Usage
 Once the extension is installed, simply use it in your code by:
 
 ```php
-echo $form->field($model, 'field')->widget(Select2::className(), [
+use vova07\select2\Widget;
+
+echo $form->field($model, 'field')->widget(Widget::className(), [
     'options' => [
         'multiple' => true,
         'placeholder' => 'Choose item'
