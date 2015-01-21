@@ -22,9 +22,9 @@ class Asset extends AssetBundle
     /**
      * @inheritdoc
      */
-	public $js = [
-		'select2.min.js'
-	];
+    public $js = [
+        'select2.min.js'
+    ];
 
     /**
      * @inheritdoc
@@ -36,9 +36,9 @@ class Asset extends AssetBundle
     /**
      * @inheritdoc
      */
-	public $depends = [
-		'yii\web\JqueryAsset'
-	];
+    public $depends = [
+        'yii\web\JqueryAsset'
+    ];
 
     /**
      * @inheritdoc
