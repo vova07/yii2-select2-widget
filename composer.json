@@ -16,7 +16,7 @@
     },
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/select2": "*"
+        "bower-asset/select2": "3.*"
     },
     "autoload": {
         "psr-4": {
