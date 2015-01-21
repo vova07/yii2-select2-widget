@@ -17,14 +17,21 @@ class Asset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vova07/select2/assets';
+    public $sourcePath = '@vova07/select2/assets/select2-3.5.0';
 
     /**
      * @inheritdoc
      */
 	public $js = [
-		'select2-3.5.0/select2.min.js'
+		'select2.min.js'
 	];
+
+    /**
+     * @inheritdoc
+     */
+    public $css = [
+        'select2.css',
+    ];
 
     /**
      * @inheritdoc
@@ -39,7 +46,7 @@ class Asset extends AssetBundle
     public function registerAssetFiles($view)
     {
         if ($this->language !== null) {
-            $this->js[] = 'select2-3.5.0/select2_locale_' . $this->language . '.js';
+            $this->js[] = 'select2_locale_' . $this->language . '.js';
         }
 
         parent::registerAssetFiles($view);
