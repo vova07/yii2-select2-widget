@@ -18,7 +18,7 @@ class Select2Asset extends AssetBundle
      * @inheritdoc
      */
 	public $css = [
-		'select2-3.5.0/select2.css'
+		'select2.css'
 	];
 
     /**
