@@ -17,7 +17,7 @@ class Asset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vova07/select2/assets/select2-3.5.0';
+    public $sourcePath = '@bower/select2';
 
     /**
      * @inheritdoc
