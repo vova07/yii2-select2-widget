@@ -15,7 +15,8 @@
         "source": "https://github.com/vova07/yii2-select2-widget"
     },
     "require": {
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "bower-asset/select2": "3.*"
     },
     "autoload": {
         "psr-4": {

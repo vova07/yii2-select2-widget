@@ -12,20 +12,19 @@ class BootstrapAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vova07/select2/assets';
+    public $sourcePath = '@bower/select2';
+    /**
+     * @inheritdoc
+     */
+    public $css = [
+        'select2-bootstrap.css'
+    ];
 
     /**
      * @inheritdoc
      */
-	public $css = [
-		'select2-bootstrap-css/select2-bootstrap.css'
-	];
-
-    /**
-     * @inheritdoc
-     */
-	public $depends = [
-		'vova07\select2\Asset',
+    public $depends = [
+        'vova07\select2\Asset',
         'yii\bootstrap\BootstrapAsset'
-	];
+    ];
 }
